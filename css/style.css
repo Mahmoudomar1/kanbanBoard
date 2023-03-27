@@ -1,0 +1,110 @@
+/* Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /
+52 / 62 / 74 / 86 / 98
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 /
+96 / 128 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html,
+body {
+  font-size: 62.5% !important;
+  color: #555;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  padding: 5rem;
+  background-color: #009578;
+}
+h1 {
+  text-align: center;
+  font-size: 4.4rem;
+  color: #dafffd;
+  margin-bottom: 4.8rem;
+  font-weight: bold;
+}
+.rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.row h2 {
+  font-size: 3.6rem;
+  color: #dafffd;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+  user-select: none;
+}
+.row .task {
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+  cursor: move;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span {
+  display: flex;
+  cursor: pointer;
+}
+input {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.row .task:focus {
+  outline-color: #006854;
+}
+.row .add-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #00866d;
+  transition: all 0.2s;
+  color: #b6fcf5;
+  font-size: 2.4rem;
+  font-weight: bold;
+  border: none;
+}
+.row .add-btn:hover {
+  background-color: #007962;
+}
+.task.hovered {
+  border: 2px dashed #000;
+  opacity: 0.5;
+}
+.edit {
+  color: green;
+  font-size: 2.4rem;
+}
+.delete {
+  color: red;
+  font-size: 2.4rem;
+}
+.icons-div {
+  display: flex;
+}
