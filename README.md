@@ -1,2 +1,2 @@
 # kanbanBoard
-Kanban Board projecr for Kalbonyan challenge
+Kanban Board project for Kalbonyan challenge
